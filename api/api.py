@@ -4,6 +4,7 @@ from flask.ext.api import FlaskAPI, status, exceptions
 
 from utils import user
 from utils import kernel
+from utils import header
 from utils import airport
 from utils import startup
 from utils import browsers
@@ -15,6 +16,13 @@ from utils import applications
 ROOT_PATH = '/'
 
 app = FlaskAPI(__name__)
+
+@app.route("/getheader", methods=['POST'])
+def get_header():
+    if request.method == 'POST':
+        data = header.generate_header()
+
+    return data
 
 @app.route("/getkernerext", methods=['POST'])
 def get_kerner_extensions():

@@ -370,6 +370,7 @@ def BigFileMd5(FilePath):
     Md5 = hashlib.md5()
     try:
         with open(FilePath, 'rb') as f:
+            print "FILEPATH: {0}".format(FilePath)
             for Chunk in iter(partial(f.read, 1048576), ''):
                 Md5.update(Chunk)
             return Md5.hexdigest()
