@@ -24,7 +24,7 @@
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href='#' id='header-menu-item'>Header</a></li>
+                            <li><a href='Header' id='header-menu-item'>Header</a></li>
                         </ul>
                     </div>
                     <div class='menu-item col-xs-1 dropdown' style='width: 85px'>
@@ -33,7 +33,7 @@
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#">Kernel Extensions</a></li>
+                            <li><a href="Kernel" id='kernel-menu-item'>Kernel Extensions</a></li>
                         </ul>
                     </div>
                     <div class='menu-item col-xs-1 dropdown' style='width: 95px'>
